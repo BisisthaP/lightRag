@@ -10,4 +10,9 @@ async def run_async_query(rag: LightRAG, question: str, mode: str, top_k: int = 
         param=QueryParam(mode=mode, top_k=top_k)
     )
 
+#top k = queries top similar to the what the user searched for 
+#mode = there are 6 modes - local, global, hybrid , naive , mix and bypass 
+#mode = mix in this case as we integrate the knowledge graph and vector store 
+
+
 
